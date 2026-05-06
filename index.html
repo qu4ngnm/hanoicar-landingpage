@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garage HanoiCar | Dịch Vụ Sửa Chữa & Bảo Dưỡng Ô Tô Chuyên Nghiệp</title>
+  <meta name="description"
+    content="Garage HanoiCar cung cấp dịch vụ sửa chữa ô tô, chẩn đoán động cơ, dịch vụ phanh, thay dầu, dịch vụ lốp và sơn thân xe. Được tin tưởng bởi hơn 10.000 khách hàng với hơn 20 năm kinh nghiệm.">
+  <meta name="keywords"
+    content="auto repair, car service, engine repair, brake service, oil change, tire service, auto body paint, car maintenance, garage near me">
+  <meta name="author" content="Garage HanoiCar">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Garage HanoiCar | Dịch Vụ Sửa Chữa & Bảo Dưỡng Ô Tô">
+  <meta property="og:description"
+    content="Dịch vụ sửa chữa ô tô chuyên nghiệp với hơn 20 năm kinh nghiệm. Đặt lịch hẹn ngay.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-garage.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Garage HanoiCar | Dịch Vụ Sửa Chữa Ô Tô">
+  <meta name="twitter:description" content="Dịch vụ sửa chữa ô tô chuyên nghiệp với hơn 20 năm kinh nghiệm.">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.autoelitegarage.com">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Garage HanoiCar",
+    "description": "Dịch vụ sửa chữa và bảo dưỡng ô tô chuyên nghiệp",
+    "telephone": "+1-555-0123",
+    "address": { "@type": "PostalAddress", "streetAddress": "1234 Motorway Drive", "addressLocality": "Downtown", "addressRegion": "CA", "postalCode": "90210" },
+    "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-16:00"],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "2400" }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Garage HanoiCar Home"><img src="images/logo.png" alt="Garage HanoiCar"
+          class="logo-img"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav_home">Trang Chủ</a></li>
+        <li><a href="#services" data-i18n="nav_services">Dịch Vụ</a></li>
+        <li><a href="#about" data-i18n="nav_about">Giới Thiệu</a></li>
+        <li><a href="#testimonials" data-i18n="nav_reviews">Đánh Giá</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Liên Hệ</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding:10px 24px;font-size:0.85rem;"
+            data-i18n="nav_book">Đặt Lịch</a></li>
+        <li>
+          <div class="lang-toggle" id="langToggle" onclick="toggleLanguage()"><span
+              class="lang-vi active">VI</span><span class="lang-en">EN</span></div>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero-garage.png" alt="AutoElite Garage professional workshop interior" width="1920" height="1080"
+        loading="eager">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> <span data-i18n="hero_badge">Đang Nhận Lịch Hẹn</span></div>
+        <h1><span data-i18n="hero_title_1">Chăm Sóc Xe Chuyên Nghiệp</span> <span class="highlight"
+            data-i18n="hero_title_2">Uy Tín & Tin Cậy</span></h1>
+        <p data-i18n="hero_desc">Từ bảo dưỡng định kỳ đến sửa chữa phức tạp, đội ngũ kỹ thuật viên được chứng nhận của
+          chúng tôi mang đến sự xuất sắc trong mỗi dịch vụ. Xe của bạn xứng đáng được tốt nhất.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_schedule">Đặt Lịch Dịch Vụ →</a>
+          <a href="#services" class="btn btn-outline" data-i18n="hero_btn_services">Dịch Vụ Của Chúng Tôi</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>20+</h3>
+          <p data-i18n="stat_years">Năm Kinh Nghiệm</p>
+        </div>
+        <div class="stat">
+          <h3>10K+</h3>
+          <p data-i18n="stat_customers">Khách Hàng Hài Lòng</p>
+        </div>
+        <div class="stat">
+          <h3>4.9★</h3>
+          <p data-i18n="stat_rating">Đánh Giá Trung Bình</p>
+        </div>
+        <div class="stat">
+          <h3>50+</h3>
+          <p data-i18n="stat_techs">Kỹ Thuật Viên</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="svc_label">Dịch Vụ Của Chúng Tôi</span>
+        <h2 data-i18n="svc_title">Dịch Vụ Chuyên Nghiệp</h2>
+        <p data-i18n="svc_desc">Giải pháp ô tô toàn diện được hỗ trợ bởi chuyên môn được chứng nhận và thiết bị hiện đại
+          nhất.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <article class="service-card reveal">
+          <div class="card-img">
+            <img src="images/service-engine.png" alt="Engine repair and rebuild service" width="400" height="250"
+              loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="icon">⚙️</div>
+            <h3 data-i18n="svc1_title">Sửa Chữa & Đại Tu Động Cơ</h3>
+            <p data-i18n="svc1_desc">Dịch vụ chẩn đoán, sửa chữa và đại tu động cơ hoàn chỉnh sử dụng công cụ tiên tiến
+              và phụ tùng OEM chính hãng.</p>
+            <a href="#contact" class="card-link" data-i18n="svc_learn">Tìm Hiểu Thêm →</a>
+          </div>
+        </article>
+        <!-- Service 2 -->
+        <article class="service-card reveal">
+          <div class="card-img">
+            <img src="images/service-brake.png" alt="Brake system repair service" width="400" height="250"
+              loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="icon">🛑</div>
+            <h3 data-i18n="svc2_title">Dịch Vụ Hệ Thống Phanh</h3>
+            <p data-i18n="svc2_desc">Kiểm tra phanh chuyên nghiệp, thay má phanh, mài đĩa phanh và đại tu toàn bộ hệ
+              thống phanh.</p>
+            <a href="#contact" class="card-link" data-i18n="svc_learn">Tìm Hiểu Thêm →</a>
+          </div>
+        </article>
+        <!-- Service 3 -->
+        <article class="service-card reveal">
+          <div class="card-img">
+            <img src="images/service-diagnostic.png" alt="Computer diagnostics service" width="400" height="250"
+              loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="icon">💻</div>
+            <h3 data-i18n="svc3_title">Chẩn Đoán Máy Tính</h3>
+            <p data-i18n="svc3_desc">Quét OBD-II tiên tiến và chẩn đoán hệ thống điện tử để xác định chính xác sự cố.
+            </p>
+            <a href="#contact" class="card-link" data-i18n="svc_learn">Tìm Hiểu Thêm →</a>
+          </div>
+        </article>
+        <!-- Service 4 -->
+        <article class="service-card reveal">
+          <div class="card-img">
+            <img src="images/service-oil.png" alt="Oil change and fluid service" width="400" height="250"
+              loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="icon">🛢️</div>
+            <h3 data-i18n="svc4_title">Thay Dầu & Dung Dịch</h3>
+            <p data-i18n="svc4_desc">Thay dầu tổng hợp và thông thường cao cấp với kiểm tra dung dịch đa điểm toàn diện.
+            </p>
+            <a href="#contact" class="card-link" data-i18n="svc_learn">Tìm Hiểu Thêm →</a>
+          </div>
+        </article>
+        <!-- Service 5 -->
+        <article class="service-card reveal">
+          <div class="card-img">
+            <img src="images/service-tire.png" alt="Tire service and wheel alignment" width="400" height="250"
+              loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="icon">🔘</div>
+            <h3 data-i18n="svc5_title">Dịch Vụ Lốp & Bánh Xe</h3>
+            <p data-i18n="svc5_desc">Đảo lốp, cân bằng, căn chỉnh bánh xe và lắp lốp mới từ các thương hiệu hàng đầu.
+            </p>
+            <a href="#contact" class="card-link" data-i18n="svc_learn">Tìm Hiểu Thêm →</a>
+          </div>
+        </article>
+        <!-- Service 6 -->
+        <article class="service-card reveal">
+          <div class="card-img">
+            <img src="images/service-paint.png" alt="Auto body paint service" width="400" height="250" loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="icon">🎨</div>
+            <h3 data-i18n="svc6_title">Sửa Chữa & Sơn Thân Xe</h3>
+            <p data-i18n="svc6_desc">Sửa chữa va chạm chuyên nghiệp, hút móp và dịch vụ sơn phục hồi đúng màu gốc.</p>
+            <a href="#contact" class="card-link" data-i18n="svc_learn">Tìm Hiểu Thêm →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-image">
+          <img src="images/about-mechanic.png" alt="Certified AutoElite mechanic at work" width="600" height="500"
+            loading="lazy">
+          <div class="experience-badge">
+            <h3>5+</h3>
+            <p data-i18n="about_badge_years">Năm</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="label" data-i18n="about_label">Về Chúng Tôi</span>
+          <h2 data-i18n="about_title">Đam Mê Dẫn Lối, Chuyên Môn Tạo Nên</h2>
+          <p data-i18n="about_desc">Từ năm 2004, Garage HanoiCar đã là sự lựa chọn đáng tin cậy cho việc chăm sóc ô tô.
+            Đội ngũ kỹ thuật viên được chứng nhận ASE kết hợp hàng thập kỷ kinh nghiệm thực tế với công nghệ chẩn đoán
+            tiên tiến để mang đến chất lượng dịch vụ vượt trội.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="check">✓</div><span data-i18n="about_f1">Kỹ Thuật Viên Chứng Nhận ASE</span>
+            </div>
+            <div class="feature-item">
+              <div class="check">✓</div><span data-i18n="about_f2">Phụ Tùng OEM Chính Hãng</span>
+            </div>
+            <div class="feature-item">
+              <div class="check">✓</div><span data-i18n="about_f3">Bảo Hành 12 Tháng</span>
+            </div>
+            <div class="feature-item">
+              <div class="check">✓</div><span data-i18n="about_f4">Kiểm Tra Miễn Phí</span>
+            </div>
+            <div class="feature-item">
+              <div class="check">✓</div><span data-i18n="about_f5">Dịch Vụ Trong Ngày</span>
+            </div>
+            <div class="feature-item">
+              <div class="check">✓</div><span data-i18n="about_f6">Giá Cả Minh Bạch</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" data-i18n="about_btn">Báo Giá Miễn Phí →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="testi_label">Đánh Giá</span>
+        <h2 data-i18n="testi_title">Khách Hàng Nói Gì</h2>
+        <p data-i18n="testi_desc">Đánh giá thực từ những khách hàng thực sự tin tưởng giao xe cho chúng tôi.</p>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal">
+          <div class="quote-icon">"</div>
+          <div class="stars">★★★★★</div>
+          <p data-i18n="testi1_text">Dịch vụ tuyệt vời! Họ chẩn đoán sự cố động cơ của tôi trong chưa đầy một giờ và sửa
+            xong trong ngày. Giá cả hợp lý và sự chú ý đến chi tiết đáng kinh ngạc.</p>
+          <div class="testimonial-author">
+            <div class="avatar">JM</div>
+            <div class="info">
+              <h4>Ngô Xuân Điền</h4><span data-i18n="testi1_role">Chủ xe BMW 5 Series</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card reveal">
+          <div class="quote-icon">"</div>
+          <div class="stars">★★★★★</div>
+          <p data-i18n="testi2_text">Tôi đã mang xe đến đây suốt 2 năm. Đội ngũ trung thực, tay nghề cao và luôn vượt
+            mong đợi. Rất khuyến khích cho mọi hãng xe.</p>
+          <div class="testimonial-author">
+            <div class="avatar">SR</div>
+            <div class="info">
+              <h4>anh Thanh Duy</h4><span data-i18n="testi2_role">Chủ xe Toyota Camry</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card reveal">
+          <div class="quote-icon">"</div>
+          <div class="stars">★★★★★</div>
+          <p data-i18n="testi3_text">Garage tốt nhất thành phố, không bàn cãi. Họ thay phanh và căn chỉnh — xe chạy như
+            mới. Nhân viên chuyên nghiệp và cơ sở sạch sẽ.</p>
+          <div class="testimonial-author">
+            <div class="avatar">DK</div>
+            <div class="info">
+              <h4>anh Kiên</h4><span data-i18n="testi3_role">Chủ xe Mercedes C-Class</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="contact_label">Liên Hệ</span>
+        <h2 data-i18n="contact_title">Đặt Lịch Dịch Vụ Ngay</h2>
+        <p data-i18n="contact_desc">Liên hệ với đội ngũ của chúng tôi để được tư vấn và báo giá miễn phí.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h3 data-i18n="contact_touch">Liên Hệ Ngay</h3>
+          <p data-i18n="contact_touch_desc">Ghé thăm hoặc liên hệ bất cứ lúc nào. Chúng tôi luôn sẵn sàng giữ xe bạn vận
+            hành tốt nhất.</p>
+          <div class="info-item">
+            <div class="icon-box">📍</div>
+            <div>
+              <h4 data-i18n="contact_location">Địa Chỉ</h4>
+              <p>632B Quang Trung, Hà Đông, Hà Nội</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon-box">📞</div>
+            <div>
+              <h4 data-i18n="contact_phone">Số Điện Thoại</h4>
+              <p>0981375598</p>
+            </div>
+          </div>
+          <!-- <div class="info-item">
+            <div class="icon-box">✉️</div>
+            <div>
+              <h4 data-i18n="contact_email">Địa Chỉ Email</h4>
+              <p>service@autoelitegarage.com</p>
+            </div>
+          </div> -->
+          <div class="info-item">
+            <div class="icon-box">🕐</div>
+            <div>
+              <h4 data-i18n="contact_hours">Giờ Làm Việc</h4>
+              <p data-i18n="contact_hours_val">T2 – Chủ nhật: 8h–18h</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <h3 data-i18n="contact_form_title">Yêu Cầu Đặt Lịch Hẹn</h3>
+          <form id="contactForm" action="#" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" data-i18n="form_firstname">Họ *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Nguyễn" data-i18n-ph="ph_firstname"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="lastName" data-i18n="form_lastname">Tên *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Văn A" data-i18n-ph="ph_lastname"
+                  required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-i18n="form_email">Địa Chỉ Email *</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" data-i18n-ph="ph_email"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="form_phone">Số Điện Thoại *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+84 909 000 000" data-i18n-ph="ph_phone"
+                  required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service" data-i18n="form_service">Dịch Vụ Cần</label>
+              <select id="service" name="service">
+                <option value="" data-i18n="form_select">Chọn dịch vụ...</option>
+                <option value="engine" data-i18n="form_opt_engine">Sửa Chữa & Đại Tu Động Cơ</option>
+                <option value="brakes" data-i18n="form_opt_brakes">Dịch Vụ Hệ Thống Phanh</option>
+                <option value="diagnostics" data-i18n="form_opt_diag">Chẩn Đoán Máy Tính</option>
+                <option value="oil" data-i18n="form_opt_oil">Thay Dầu & Dung Dịch</option>
+                <option value="tires" data-i18n="form_opt_tires">Dịch Vụ Lốp & Bánh Xe</option>
+                <option value="paint" data-i18n="form_opt_paint">Sửa Chữa & Sơn Thân Xe</option>
+                <option value="other" data-i18n="form_opt_other">Khác</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form_message">Tin Nhắn</label>
+              <textarea id="message" name="message" placeholder="Mô tả vấn đề hoặc nhu cầu dịch vụ xe của bạn..."
+                data-i18n-ph="ph_message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="form_submit">Gửi Yêu Cầu Đặt Lịch
+              →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="images/logo.png" alt="Garage HanoiCar" class="logo-img footer-logo-img"></div>
+          <p data-i18n="footer_desc">Đối tác đáng tin cậy cho dịch vụ chăm sóc ô tô chuyên nghiệp từ năm 2004. Dịch vụ
+            chất lượng, giá cả trung thực, bảo đảm hài lòng.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_quick">Liên Kết Nhanh</h4>
+          <ul>
+            <li><a href="#home" data-i18n="footer_home">Trang Chủ</a></li>
+            <li><a href="#services" data-i18n="footer_services">Dịch Vụ</a></li>
+            <li><a href="#about" data-i18n="footer_about">Về Chúng Tôi</a></li>
+            <li><a href="#testimonials" data-i18n="footer_reviews">Đánh Giá</a></li>
+            <li><a href="#contact" data-i18n="footer_contact">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_svc_title">Dịch Vụ</h4>
+          <ul>
+            <li><a href="#services" data-i18n="footer_svc_engine">Sửa Động Cơ</a></li>
+            <li><a href="#services" data-i18n="footer_svc_brake">Dịch Vụ Phanh</a></li>
+            <li><a href="#services" data-i18n="footer_svc_diag">Chẩn Đoán</a></li>
+            <li><a href="#services" data-i18n="footer_svc_oil">Thay Dầu</a></li>
+            <li><a href="#services" data-i18n="footer_svc_tire">Dịch Vụ Lốp</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">Thông Tin Liên Hệ</h4>
+          <ul>
+            <li><a href="tel:0981375598">0981375598</a></li>
+            <!-- <li><a href="mailto:service@autoelitegarage.com">service@autoelite.com</a></li> -->
+            <li><a href="#">632B Quang Trung, Hà Đông, Hà Nội</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">&copy; 2026 Garage HanoiCar. Bảo lưu mọi quyền.</p>
+        <p data-i18n="footer_made">Thiết kế với ❤️ dành cho người yêu xe</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-buttons">
+    <a href="https://zalo.me/0986969134" target="_blank" rel="noopener noreferrer" class="float-btn zalo-btn"
+      aria-label="Chat Zalo">
+      <svg viewBox="0 0 48 48" width="28" height="28" fill="currentColor">
+        <path
+          d="M24 0C10.745 0 0 10.745 0 24s10.745 24 24 24 24-10.745 24-24S37.255 0 24 0zm11.04 31.96c-.48 1.68-2.64 3.12-4.56 3.48-.72.12-1.56.24-4.56-.96-3.84-1.56-6.36-5.52-6.6-5.76-.24-.24-1.8-2.4-1.8-4.56s1.14-3.24 1.56-3.72c.42-.48.84-.6 1.14-.6h.84c.24 0 .6-.12.96.72.36.84 1.32 3.12 1.44 3.36.12.24.18.48.06.78-.12.3-.24.48-.42.72-.24.24-.48.54-.66.72-.24.24-.48.48-.18 .96s1.32 2.16 2.82 3.48c1.92 1.68 3.54 2.22 4.02 2.46.48.24.78.18 1.08-.12.3-.3 1.26-1.44 1.56-1.92.36-.48.66-.42 1.14-.24.48.18 2.94 1.38 3.42 1.62.48.24.84.36.96.6.12.18.12 1.14-.36 2.28z" />
+      </svg>
+      <span class="float-label">Zalo</span>
+    </a>
+    <a href="tel:0981375598" class="float-btn call-btn" aria-label="Gọi điện">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path
+          d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+      </svg>
+      <span class="float-label">Gọi ngay</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      backToTop.classList.toggle('visible', window.scrollY > 500);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const overlay = document.getElementById('mobileOverlay');
+    function toggleMenu() {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+      hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+    }
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) toggleMenu();
+      });
+    });
+
+    // Back to top
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('.form-submit');
+      const originalText = btn.textContent;
+      btn.textContent = translations.form_success[currentLang];
+      btn.style.background = 'linear-gradient(135deg, #2d9c4a, #1e7a36)';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+        this.reset();
+      }, 3000);
+    });
+
+    // Counter animation for hero stats
+    function animateCounters() {
+      const stats = document.querySelectorAll('.stat h3');
+      stats.forEach(stat => {
+        const text = stat.textContent;
+        const num = parseInt(text.replace(/\D/g, ''));
+        const suffix = text.replace(/[\d]/g, '');
+        let current = 0;
+        const increment = Math.ceil(num / 60);
+        const timer = setInterval(() => {
+          current = Math.min(current + increment, num);
+          stat.textContent = (current >= 1000 ? (current / 1000).toFixed(0) + 'K' : current) + suffix;
+          if (current >= num) { stat.textContent = text; clearInterval(timer); }
+        }, 30);
+      });
+    }
+    // Trigger counter animation when hero is in view
+    const heroObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) { animateCounters(); heroObserver.disconnect(); }
+    }, { threshold: 0.5 });
+    heroObserver.observe(document.querySelector('.hero-stats'));
+  </script>
+  <script src="i18n.js"></script>
+</body>
+
+</html>
